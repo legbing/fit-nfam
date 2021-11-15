@@ -1,0 +1,115 @@
+.carousel {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 600px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.right-arrow {
+    right: 50px;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.left-arrow {
+    left: 50px;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.ad-bar {
+    display: flex;
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.ad-pic {
+    display: inline-block;
+    margin-left: 10%;
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
+}
+.ad-bar-right {
+    width: 40%;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+    padding: 100px 0;
+}
+.start {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    
+}
+.get-treated {
+    font-size: 40px;
+    z-index: 20;
+}
+.fields {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.field-card {
+    background-color: transparent;
+    display: inline-block;
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+}
+.field-card-inner {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.field-card:hover .field-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .field-card-front, .field-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .field-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .field-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: "center";
+    font-size: 40;
+    
+  }
+  
+  .img-field {
+    width: 250px;
+    height: 250px;
+  }
