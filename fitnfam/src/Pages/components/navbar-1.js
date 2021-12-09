@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from '../assets/logo512.png';
-import Login from '../login/login';
+import Profile from '../profile';
 import {Link} from 'react-router-dom';
 import logo_2 from '../assets/2.png';
-class Navbar extends React.Component{
+class Navbar1 extends React.Component{
     render()
             {
                 var headStyle = {
@@ -19,9 +19,9 @@ class Navbar extends React.Component{
                 };
                 var buttonStyle = {
                     padding: 10,
-                    borderRadius: 10,
-                    backgroundColor: "blue",
-                    cursor: "pointer"
+                    borderRadius: 30,
+                    backgroundColor: "blue"
+
                 };
                 var div2Style = {
                     display: 'inline-block',
@@ -41,7 +41,7 @@ class Navbar extends React.Component{
                 return(
                     <header style={headStyle}>
                         <div style={div1Style}>
-                            <a href = "/"><img src={logo_2} alt = "logo" width="60" height="65"/></a>
+                            <a href = "/"><img src={logo_2} alt = "logo" width="55" height="55"/></a>
                             <h1 style={hstyle}>Fit'nFam</h1>
                         </div>
                         
@@ -49,11 +49,11 @@ class Navbar extends React.Component{
                             <a href="/about" style={linkStyle}>About</a>
                             <a href="/contact" style={linkStyle}>Contact</a>
                             <a href="/doctors" href = "/doctors" style={linkStyle}>Doctors</a>
-                            <Link to="/login" element={<Login/>}><button style={buttonStyle}>Login</button></Link>
+                            <Link to = "/profile" element={<Profile/>}><button style={buttonStyle}>User name</button></Link>
                         </div>
                     </header>
                 );
             };
 }
 
-export default Navbar;
+export default Navbar1;

@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../assets/doctor.jpg';
+import pic from '../assets/doctor-1.jpg';
 
 export default class Adv extends React.Component {
     render() {
@@ -9,7 +9,7 @@ export default class Adv extends React.Component {
                 <div className="ad-bar-right">
                     <h1 className="get-treated">Get Treated By the Best</h1>
                     <h1 className = "choose">Choose from a list of over 500 doctors</h1>
-                    <button className="start">Start</button>
+                    <a href = "/doctors"><button className="start">Start</button></a>
                 </div>
             </article>
         );

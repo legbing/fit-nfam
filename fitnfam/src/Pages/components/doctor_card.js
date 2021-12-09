@@ -12,7 +12,9 @@ class Card extends React.Component {
         };
         */
        var h1style = {
-           marginTop: 100
+           marginTop: 120,
+           fontSize: 30,
+           fontFamily: 'cursive'
        }
         return (
             <div className="field-card">

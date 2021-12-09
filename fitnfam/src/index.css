@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
 }
 
 .image {
@@ -13,14 +14,14 @@
 }
 
 .right-arrow {
-    right: 50px;
+    margin-right: 10%;
     font-size: 3rem;
     z-index: 10;
     cursor: pointer;
     user-select: none;
 }
 .left-arrow {
-    left: 50px;
+    margin-left: 10%;
     font-size: 3rem;
     z-index: 10;
     cursor: pointer;
@@ -37,20 +38,20 @@
     margin-left: 10%;
     border-radius: 10px;
     width: 450px;
-    height: 450px;
+    height: 300px;
 }
 .ad-bar-right {
     width: 40%;
     display: inline-block;
     margin-left: 10%;
     text-align: center;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .start {
     border-radius: 10px;
     padding: 10px;
     width: 100px;
-    
+    cursor: pointer;
 }
 .get-treated {
     font-size: 40px;
@@ -60,17 +61,21 @@
     display: flex;
     margin: 10px;
     flex-wrap: wrap;
+    width: 100%;
 }
 .field-card {
     background-color: transparent;
     display: inline-block;
     perspective: 1000px;
-    width: 250px;
-    height: 250px;
-    margin: 40px;
+    width: 350px;
+    height: 300px;
+    margin: 50px;
+    
 }
 .field-card-inner {
-    
+  
+  
+         box-shadow: 0 3px 50px rgb(0 0 0 / 0.2);
     position: relative;
     width: 100%;
     height: 100%;
@@ -91,16 +96,17 @@
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+   
   }
   
   /* Style the front side (fallback if image is missing) */
-  .field-card-front {
+.field-card-front {
     background-color: #bbb;
     color: black;
   }
   
   /* Style the back side */
-  .field-card-back {
+.field-card-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
@@ -109,7 +115,152 @@
     
   }
   
-  .img-field {
-    width: 250px;
-    height: 250px;
+.img-field {
+    width: 350px;
+    height: 300px;
   }
+
+.doctor-det {
+    display: flex;
+    position: relative;
+    border: 1px solid;
+    margin: 10px;
+    padding: 20px;
+    z-index: 100;
+}
+.doctor-list-inner {
+    
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    position: relative;
+    border: 10px solid blue;
+    box-shadow: blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: cyan;
+}
+.pic-div {
+    margin-left: 10%;
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    z-index: 20;
+  }
+
+.det-div {
+    width: 40%;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+    padding: 100px 0;
+}
+.book-appt {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 27;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+
+ #Bookappointment{
+   max-width: 500px;
+   min-width: 300px;
+   max-height: 700px;
+   width: 30%;
+   height: 60%;
+   margin: 100px auto;
+   background-color:skyblue;
+   border-radius: 25px;
+ }
+ 
+ #headerTitle{
+   text-align: center;
+   font-family: 'open sans', sans-serif;
+   padding: 2rem 0;
+   margin: 0;
+   font-size: 2rem;
+ }
+ 
+ .row{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 2rem;
+   max-width: 100%;
+   
+ }
+ 
+ .row input{
+   width: 80%;
+   box-sizing: border-box;
+   border: none;
+   font-size: 1.3rem;
+   padding-left: 1.5rem;
+   padding-bottom: 1rem;
+   box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+   transition: box-shadow 0.2s ease-in;
+ }
+ 
+ .row input:focus{
+    box-shadow: inset 0px -3px 0px 0px rgba(34,193,195,0.7);
+    outline: none;
+ }
+ 
+ .row input::-webkit-input-placeholder{
+   opacity: 1;
+   transition: opacity 0.25s ease-out;
+ }
+ 
+ .row input:hover::-webkit-input-placeholder,
+ .row input:focus::-webkit-input-placeholder{
+   opacity: 0;
+ }
+ 
+ .row label{
+   align-self: start;
+   padding-left: 4.5rem;
+   padding-bottom: 0.5rem;
+   color: blue;
+   font-weight: 500;
+ }
+ 
+ .row button{
+   border-radius: 25px;
+   width: 80%;
+   height: 40px;
+   font-size: 1.3rem;
+   color:black;
+   font-weight: 700;
+   background: rgb(34,193,195);
+   background: linear-gradient(blue);
+   border: 0px;
+   cursor: pointer;
+   transition: opacity 0.25s ease-out;
+ }
+ 
+ .row button:hover{
+   opacity: 0.8;
+ }
+ 
+.book-now{
+   padding-bottom: 1.5rem;
+ }
+
+.appt-card {
+  margin-top: 5%;
+  background-color: rgb(66, 102, 201);
+  border: 1px solid;
+  border-radius: 17px;
+  margin-left: 30%;
+  width: 500px;
+  padding: 20px;
+  box-shadow: (1, 2, cornflowerblue);
+  z-index: 3;
+}
+
+.profile {
+  position: relative;
+}
