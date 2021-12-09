@@ -33,7 +33,8 @@ class Details extends React.Component {
                     <h3 style={h3style}>{this.props.experience} of experience</h3>
                     <p>Available through Mon-Fri</p>
                     <Link to = {{
-                    pathname: "/doctors/book"
+                    pathname: "/doctors/book",
+                    state: this.props.name
                     }}><button className="book-appt" onClick={this.book}>Book appointment</button></Link>
                 </div>
             </article>

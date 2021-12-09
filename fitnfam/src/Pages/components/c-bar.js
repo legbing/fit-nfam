@@ -1,5 +1,5 @@
 import React from "react";
-import About from '../about';
+import About from '../about/about';
 import Doctors from "../doctors";
 import {Link} from 'react-router-dom';
 class Contact_Bar extends React.Component {

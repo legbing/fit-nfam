@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router';
+import logo from '../assets/2.png';
+import './register.css';
 import Navbar from '../components/navbar';
 import Login from '../login/login';
 import {Link} from 'react-router-dom';
@@ -64,6 +66,7 @@ render() {
 var reg_style = {
   maxWidth: "500",
     minWidth: "300",
+    
     maxHeight: "700",
     width: "30%",
     height: "60%",
@@ -72,13 +75,16 @@ var reg_style = {
     borderRadius: "25",
     alignItems: "center"
 }
+var bodySt = {
+  backgroundImage: "url(" + logo + ")"
+}
 const loginStyle={
   color:"violet",
   fontFamily:"calibri",
   fontSize: 15
 }
     return (
-      <div>
+      <div style={bodySt}>
         <Navbar />
       <div style={reg_style} className="loginform">
         

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import logo from '../assets/2.png';
+import './login.css';
 import { useNavigate } from 'react-router-dom';
 import Register from '../register/register';
 import { Link } from 'react-router-dom';
@@ -28,7 +30,13 @@ const Login = () => {
           height: "60%",
           margin: "100px auto",
           backgroundColor:"skyblue",
-          borderRadius: "25"
+          borderRadius: "25",
+          
+      }
+      var bodySt = {
+          width: "100%",
+          height: "100%",
+          backgroundImage: "url(" + logo + ")"
       }
     const [user, setUser] = useState({
         username:"",
@@ -67,7 +75,7 @@ const Login = () => {
 }
     
         return(
-          <div> <Navbar/>
+          <div style={bodySt}> <Navbar/>
           <div id="loginform" style={reg_style}>
              
             <h2 id="headerTitle">Login</h2>

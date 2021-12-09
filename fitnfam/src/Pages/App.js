@@ -15,8 +15,8 @@ import Register from './register/register';
 import Bookappointment from './book-appt';
 import Profile from './profile';
 import Login from './login/login';
-import About from './about';
-
+import About from './about/about';
+import MentalHealth from './mental_health';
 export default function App() {
     const location = useLocation();
     const user = location.state;
@@ -66,6 +66,7 @@ export default function App() {
             <Route path="/doctors/book" element={<Bookappointment/>}></Route>
             <Route path="/profile" element={<Profile/>}></Route>
             <Route path="/about" element={<About/>}></Route>
+            <Route path="/mental-health" element={<MentalHealth/>}></Route>
             </Routes>
        
     )

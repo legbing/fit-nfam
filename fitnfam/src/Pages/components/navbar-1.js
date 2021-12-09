@@ -3,6 +3,7 @@ import logo from '../assets/logo512.png';
 import Profile from '../profile';
 import {Link} from 'react-router-dom';
 import logo_2 from '../assets/2.png';
+
 class Navbar1 extends React.Component{
     render()
             {
@@ -26,7 +27,7 @@ class Navbar1 extends React.Component{
                 var div2Style = {
                     display: 'inline-block',
                     width: '50%',
-                    marginLeft: '55%'
+                    marginLeft: '45%'
                 }
                 var div1Style = {
                     display: 'flex',
@@ -47,7 +48,7 @@ class Navbar1 extends React.Component{
                         
                         <div style={div2Style}>
                             <a href="/about" style={linkStyle}>About</a>
-                            <a href="/contact" style={linkStyle}>Contact</a>
+                            <a href="/mental-health" style={linkStyle}>Mental Health</a>
                             <a href="/doctors" href = "/doctors" style={linkStyle}>Doctors</a>
                             <Link to = "/profile" element={<Profile/>}><button style={buttonStyle}>User name</button></Link>
                         </div>

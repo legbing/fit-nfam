@@ -26,7 +26,7 @@ class Navbar extends React.Component{
                 var div2Style = {
                     display: 'inline-block',
                     width: '50%',
-                    marginLeft: '55%'
+                    marginLeft: '45%'
                 }
                 var div1Style = {
                     display: 'flex',
@@ -47,7 +47,7 @@ class Navbar extends React.Component{
                         
                         <div style={div2Style}>
                             <a href="/about" style={linkStyle}>About</a>
-                            <a href="/contact" style={linkStyle}>Contact</a>
+                            <a href="/mental-health" style={linkStyle}>Mental Health</a>
                             <a href="/doctors" href = "/doctors" style={linkStyle}>Doctors</a>
                             <Link to="/login" element={<Login/>}><button style={buttonStyle}>Login</button></Link>
                         </div>

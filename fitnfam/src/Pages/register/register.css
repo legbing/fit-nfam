@@ -93,3 +93,6 @@ body{
     padding-bottom: 1.5rem;
   }
   
+  body {
+    background-image: url("2.png");
+  }

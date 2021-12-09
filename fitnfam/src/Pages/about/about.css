@@ -1,0 +1,27 @@
+.about {
+ 
+  margin: 30px;
+  padding: 100px 50px 50px 50px;
+  
+  color: white;
+}
+.about_us {
+  margin-left: 20%;
+}
+.about1 {
+  background: black;
+}
+.our-team {
+  color: white;
+  margin: 20px;
+}
+.member {
+  border: 1px dotted;
+  padding: 10px;
+  margin: 20px;
+}
+.about2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
