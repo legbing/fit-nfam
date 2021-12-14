@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import logo from '../assets/2.png';
-import './login.css';
+
 import { useNavigate } from 'react-router-dom';
 import Register from '../register/register';
 import { Link } from 'react-router-dom';
@@ -64,6 +64,7 @@ const Login = () => {
     }
     const handleSubmit =()=> {
         //console.log(user.username, user.password);
+        if(user.username && user.password) {
         axios.post("http://localhost:5000/login", user)
         .then(res=>{
             
@@ -71,7 +72,12 @@ const Login = () => {
              : alert(res.data.message)
         //setLoginUser(res.data.user)
         //navigate("/")})
-    });
+        
+        });
+    }
+    else {
+        alert("Invalid input");
+    }
 }
     
         return(

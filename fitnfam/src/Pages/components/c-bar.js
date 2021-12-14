@@ -35,7 +35,7 @@ class Contact_Bar extends React.Component {
                     <p><a href = '/about' style={{textDecoration: "none",color:"black"}}>About us</a></p>
                     <p><a href = '/doctors' style={{textDecoration: "none",color:"black"}}>Doctors</a></p>
                    
-                    <p>Mental Health</p>
+                    <p><a href = '/mental-health' style={{textDecoration: "none",color:"black"}}>Mental health</a></p>
                 </section>
                 <section style={sec2Style}>
                     <p>Contact Us </p><hr/>

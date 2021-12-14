@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import logo from '../assets/2.png';
-import './register.css';
+//import './register.css';
 import Navbar from '../components/navbar';
 import Login from '../login/login';
 import {Link} from 'react-router-dom';
@@ -20,7 +20,6 @@ class Register1 extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
   }
 
- 
 handleChange(event) {
     var name1 = event.target.name;
     var value1 = event.target.value;
@@ -45,7 +44,7 @@ handleSubmit(event) {
     const {name, email, password} = this.state.user;
     console.log(name, email, password);
     if(name && email && password) {
-        axios.post("http://localhost:5000/register")
+        axios.post("http://localhost:6969/register")
         .then(res=>console.log(res));
         //useNavigate('/login');
     }

@@ -23,16 +23,7 @@ export default function App() {
     const navigate = useNavigate();
     console.log(user);
 
-    function requireAuth(nextState, replace, next) {
-        console.log("require");
-        if(!user) {
-            replace({
-                pathname: "/login",
-                state: {nextPathname: nextState.location.pathname}
-            });
-        }
-        next();
-    }
+    
     /*
     useEffect(() => {
         if(!user) {

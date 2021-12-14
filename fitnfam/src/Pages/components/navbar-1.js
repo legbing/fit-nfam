@@ -50,7 +50,7 @@ class Navbar1 extends React.Component{
                             <a href="/about" style={linkStyle}>About</a>
                             <a href="/mental-health" style={linkStyle}>Mental Health</a>
                             <a href="/doctors" href = "/doctors" style={linkStyle}>Doctors</a>
-                            <Link to = "/profile" element={<Profile/>}><button style={buttonStyle}>User name</button></Link>
+                            <Link to = "/profile" element={<Profile/>}><button style={buttonStyle}>User Name</button></Link>
                         </div>
                     </header>
                 );

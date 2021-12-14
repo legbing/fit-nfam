@@ -43,6 +43,7 @@ app.post("/login", function (req, res) {
         if(user) {
             const isMatch = await bcrypt.compare(password, user.password);
             if (isMatch) {
+                console.log("Login successful");
                 res.send({message:"Login success", user:user});
             }
            /*
@@ -92,7 +93,7 @@ app.post("/register", async function (req, res) {
             const user = new User({name, email, password});
             user.save(err=>{
                 if(err) {
-                    res.send(err);
+                    res.send({message: err});
                 }
                 else {
                     res.send({message:"Registration Successful"});
